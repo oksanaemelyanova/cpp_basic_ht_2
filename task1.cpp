@@ -2,11 +2,12 @@
 
 class Calculator
 {
-  public:
+  private:
     int num1;
     int num2;
 
-  Calculator(double num1, double num2) {
+  public:
+    Calculator(double num1, double num2) {
       set_num1(num1); 
       set_num2(num2);
       std::cout << "num1 + num2 = " << add() << std::endl;
@@ -15,34 +16,34 @@ class Calculator
       std::cout << "num1 * num2 = " << multiply() << std::endl;
       std::cout << "num1 / num2 = " << divide_1_2() << std::endl;
       std::cout << "num1 / num2 = " << divide_2_1() << std::endl;
-  }
+    }
 
-  int add()
+  double add()
   {
     return num1 + num2;  
   }
 
-  int multiply()
+  double multiply()
   {
     return num1 * num2;
   }
 
-  int subtract_1_2()
+  double subtract_1_2()
   {
     return num1 - num2;
   }
 
-  int subtract_2_1()
+  double subtract_2_1()
   {
     return num2 - num1;
   }
 
-  int divide_1_2()
+  double divide_1_2()
   {
     return num1 / num2;
   }
 
-  int divide_2_1()
+  double divide_2_1()
   {
     return num2 / num1;
   }
